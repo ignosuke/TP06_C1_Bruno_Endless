@@ -160,7 +160,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerRespawn
   appearDuration: 0.5
   respawnHeight: 3
-  dropKey: 32
+  dropKey: 323
 --- !u!212 &1282574300518230290
 SpriteRenderer:
   serializedVersion: 2
@@ -449,19 +449,19 @@ TrailRenderer:
       - serializedVersion: 3
         time: 0.5
         value: 0
-        inSlope: 0
-        outSlope: 0
+        inSlope: -0.5606723
+        outSlope: -0.5606723
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0
+        inWeight: 0.35971224
         outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 0.38431376, g: 0.7568628, b: 0.5372549, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.09714311, g: 0.5566038, b: 0.2857638, a: 1}
+      key1: {r: 0.38431373, g: 0.75686276, b: 0.5372549, a: 1}
       key2: {r: 1, g: 1, b: 1, a: 0}
       key3: {r: 1, g: 1, b: 1, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -491,11 +491,11 @@ TrailRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 2
     textureScale: {x: 5, y: 5}
     shadowBias: 0.5
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 0.001
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1

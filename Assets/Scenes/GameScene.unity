@@ -2525,13 +2525,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2306055144612555475, guid: f48e3e517f51a3144b7b2f6d5865a619, type: 3}
+      propertyPath: m_MinVertexDistance
+      value: 0.05
+      objectReference: {fileID: 0}
     - target: {fileID: 4139882596905585856, guid: f48e3e517f51a3144b7b2f6d5865a619, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7425736347655655151, guid: f48e3e517f51a3144b7b2f6d5865a619, type: 3}
-      propertyPath: dropKey
-      value: 323
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
