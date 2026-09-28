@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1510335506196391784}
   - component: {fileID: 7728482413939914734}
   - component: {fileID: 6711390213095775420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DiamondBurst
   m_TagString: Untagged
   m_Icon: {fileID: 0}

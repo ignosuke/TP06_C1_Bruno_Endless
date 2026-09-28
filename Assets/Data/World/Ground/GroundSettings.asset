@@ -18,3 +18,5 @@ MonoBehaviour:
   chunkVariants:
   - {fileID: 11400000, guid: 573ce9683304b8f499f5a4a05c7f93da, type: 2}
   - {fileID: 11400000, guid: f706381b407b1804ea48b4d453bd84d1, type: 2}
+  - {fileID: 11400000, guid: 3d4cf8a081b1b0442b5f4b31ae5a37f3, type: 2}
+  - {fileID: 11400000, guid: de2d61cad7596a347a3c985a3987b089, type: 2}

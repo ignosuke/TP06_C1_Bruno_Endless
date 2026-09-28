@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7615393568646257006}
   - component: {fileID: 7474460234508436143}
   - component: {fileID: 1363742874102363257}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Bug
   m_TagString: Untagged
   m_Icon: {fileID: 0}

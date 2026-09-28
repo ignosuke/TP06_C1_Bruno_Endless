@@ -4,6 +4,7 @@ public class Pickup : MonoBehaviour
 {
     [SerializeField] private PickupDataSo pickupData;
     private ParticleSystem particles;
+    public PickupDataSo GetData() => pickupData;
     public int GetScoreValue() => pickupData.GetScoreValue();
 
     public void Collect()

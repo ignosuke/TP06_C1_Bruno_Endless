@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 913788723591261501}
   - component: {fileID: 2631838588021059833}
   - component: {fileID: 1011215013428812171}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CoinBurst
   m_TagString: Untagged
   m_Icon: {fileID: 0}

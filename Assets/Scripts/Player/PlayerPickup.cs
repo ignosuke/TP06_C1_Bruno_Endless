@@ -4,8 +4,14 @@ using UnityEngine;
 public class PlayerPickup : MonoBehaviour
 {
     [SerializeField] private LayerMask pickupLayers;
+    private PlayerPowerUps powerUps;
 
     public event Action<int> OnPickedUp;
+
+    private void Awake()
+    {
+        powerUps = GetComponent<PlayerPowerUps>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,7 +19,11 @@ public class PlayerPickup : MonoBehaviour
         if (!IsInLayerMask(other.gameObject.layer, pickupLayers)) return;
         if (!other.TryGetComponent<Pickup>(out Pickup pickup)) return;
 
-        OnPickedUp?.Invoke(pickup.GetScoreValue());
+        if (pickup.GetData().IsPowerUp())
+            powerUps.Apply(pickup.GetData());
+        else
+            OnPickedUp?.Invoke(pickup.GetScoreValue());
+
         pickup.Collect();
     }
 

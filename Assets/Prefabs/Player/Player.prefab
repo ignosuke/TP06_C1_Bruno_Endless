@@ -15,13 +15,15 @@ GameObject:
   - component: {fileID: 983189370033197895}
   - component: {fileID: 2162163054789137586}
   - component: {fileID: 7976203554929872592}
+  - component: {fileID: 935011867202572283}
+  - component: {fileID: 7425736347655655151}
   - component: {fileID: 1282574300518230290}
   - component: {fileID: 9124953083361777817}
   - component: {fileID: 4661172856378185402}
   - component: {fileID: 4111995240809827529}
   - component: {fileID: 2306055144612555475}
   - component: {fileID: 8375892225057569165}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,9 +70,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80bce1a891345a47978f1c7db797028, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Death
-  lethalLayer:
+  enemyLayers:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 256
+  fallLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  launchForce: {x: 8, y: 10}
+  launchTorque: 15
+  launchLifetime: 3
 --- !u!114 &673740232448515619
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerPickup
   pickupLayers:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 128
 --- !u!114 &983189370033197895
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,6 +132,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c795059e01384a44a0b20d09d7bb25a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+--- !u!114 &935011867202572283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139882596905585856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b0ed6ead4060774a8e39e1be87ce8e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerPowerUps
+  spriteRenderer: {fileID: 1282574300518230290}
+  powerDonutColor: {r: 1, g: 0.95, b: 0.4, a: 1}
+--- !u!114 &7425736347655655151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4139882596905585856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22db241ea502f0d4e96800604f6f1b7f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRespawn
+  appearDuration: 0.5
+  respawnHeight: 3
+  dropKey: 32
 --- !u!212 &1282574300518230290
 SpriteRenderer:
   serializedVersion: 2
