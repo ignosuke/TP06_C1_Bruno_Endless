@@ -3,15 +3,15 @@ using UnityEngine;
 public class Pickup : MonoBehaviour
 {
     [SerializeField] private PickupDataSo pickupData;
-
+    private ParticleSystem particles;
     public int GetScoreValue() => pickupData.GetScoreValue();
 
     public void Collect()
     {
-        ParticleSystem effect = pickupData.GetCollectEffect();
+        particles = pickupData.GetCollectEffect();
 
-        if (effect != null)
-            Instantiate(effect, transform.position, Quaternion.identity, transform.parent);
+        if (particles != null)
+            Instantiate(particles, transform.position, Quaternion.identity, transform.parent);
 
         Destroy(gameObject);
     }

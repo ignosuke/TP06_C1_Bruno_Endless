@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfb9f320d36990a428584cd8cda31e8d, type: 3}
+  m_Name: GreenBiome
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeSo
+  sky: {fileID: -6874126174316621816, guid: f95303268094493438de7b9223a441ac, type: 3}
+  layers:
+  - {fileID: -3811632549831811446, guid: fa1535754a0011145bdccba46f810cb5, type: 3}
+  - {fileID: -8532126866013108644, guid: 04e8c8337fec828478b288c9d826e331, type: 3}
+  - {fileID: -4128227896776620455, guid: 600a272dce88767479fd713c6e607bcc, type: 3}
+  layers_width: 32
+  layers_height: 5

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfb9f320d36990a428584cd8cda31e8d, type: 3}
+  m_Name: LightBiome
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeSo
+  sky: {fileID: -5168506453294252854, guid: 3d35cd3ab4034d946b390dcc3a2569f3, type: 3}
+  layers:
+  - {fileID: -916324519911063486, guid: d2d9fdb7ec80087489808df25388bd14, type: 3}
+  - {fileID: 8048573979041798259, guid: 1eb0ee8f1c3f69f468615d1cb1055c0d, type: 3}
+  - {fileID: -5136674254576546418, guid: 061f051449397b04ba922875852c6cd3, type: 3}
+  layers_width: 32
+  layers_height: 5

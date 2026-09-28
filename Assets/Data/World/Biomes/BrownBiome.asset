@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfb9f320d36990a428584cd8cda31e8d, type: 3}
+  m_Name: BrownBiome
+  m_EditorClassIdentifier: Assembly-CSharp::BiomeSo
+  sky: {fileID: 2919731674004245122, guid: 5ab90fad2d69d8641bd74a4b9a751846, type: 3}
+  layers:
+  - {fileID: -8159518141884656206, guid: 6c84a934611b65447ae5599f7b643e31, type: 3}
+  - {fileID: -9148201449617276431, guid: d717e5f09c5bab4438f79d288a15afb2, type: 3}
+  - {fileID: 5428122361617284763, guid: 663f8f0b8674f5d4182682bccd74b34b, type: 3}
+  layers_width: 32
+  layers_height: 5
